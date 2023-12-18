@@ -3,13 +3,11 @@ import LinkButton from "./LinkButton";
 
 function Error() {
   const error = useRouteError();
-  console.log(error);
 
   return (
     <div>
       <h1>Something went wrong 😢</h1>
       <h2>{error.status}</h2>
-      {/* <h3>{error.statusText}</h3> */}
 
       <p>{error.data || error.message}</p>
 
